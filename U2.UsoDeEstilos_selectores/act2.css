@@ -1,0 +1,47 @@
+*{
+  font-size:18pt;
+}
+header>h1{
+  color:blue;
+  font-size:32pt;
+}
+article >h1{
+  color:orange;
+}
+h1+p{background: yellow;
+}
+img+p{
+  background: yellow;
+  color:red;
+  font-family:Courier;
+  text-transform:capitalize;
+}
+footer>span{
+  color:pink;
+}
+p>b{
+  color:red;
+}
+#japo{
+  color:pink;
+  font-size:24pt;
+}
+p>i{
+  color:green;
+}
+a:hover{
+  color:grey;
+  font-weight:bold;
+}
+
+.destacado{
+  color:blue;
+  font-weight: bold;
+}
+span.destacado+a{
+  color:purple;
+
+}
+a{
+  color:green;
+}

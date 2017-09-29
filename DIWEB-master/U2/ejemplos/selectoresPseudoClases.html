@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Selectores PseudoClase</title>
+<style>
+
+/*Li dentro de header*/
+xxx {
+  list-style: none;
+}
+
+/* Enlaces no visitado y visitado */
+xxx {
+  text-decoration: none;
+  background-color: green;
+  border: 1px solid blue;
+  color: black;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+/*Enlace sobre el que ponemos el ratón y enlace seleccionado*/
+xxx {
+  background-color: red;
+  color: purple;
+}
+
+/*
+Importante:
+Para que funcionen todos los estados:
+a:hover debe ir después de a:link y a:visited
+a:active debe ir después de a:hover
+*/
+
+/* Tercer elemento li dentro de la cabecera */
+xxx {
+  font-size: 24px;
+}
+
+/* Div's impares */
+xxx {
+  background-color: gray;
+}
+
+/*Cuando el ratón se ponga encima del 4º div*/
+xxx {
+  background-color: green;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Resumen Selectores CSS</a></li>
+    <li><a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo Clases</a></li>
+  </ul>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
+
+</body>
+</html>
