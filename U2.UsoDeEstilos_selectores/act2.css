@@ -8,8 +8,7 @@ header>h1{
 article >h1{
   color:orange;
 }
-h1+p{background: yellow;
-}
+
 img+p{
   background: yellow;
   color:red;
@@ -23,12 +22,13 @@ p>b{
   color:red;
 }
 #japo{
-  color:pink;
+  color:magenta;
   font-size:24pt;
 }
 p>i{
   color:green;
 }
+
 a:hover{
   color:grey;
   font-weight:bold;
@@ -38,10 +38,14 @@ a:hover{
   color:blue;
   font-weight: bold;
 }
-span.destacado+a{
-  color:purple;
 
-}
 a{
   color:green;
+}
+article p:nth-child(even){
+  background-color: yellow;
+}
+
+a[http://www.pokemon.com/es/]{
+  color:purple;
 }
