@@ -1,0 +1,56 @@
+/*18 selectores distintos:*/
+
+/*1:Aplicamos a todo el html :*/
+*{
+  background-color: lightblue;
+}
+/*2:Selector clase a*/
+.a{
+font-style: italic;
+}
+/*3: Selector id b*/
+#b{
+  font-size: 200%;
+}
+/*4: selector simple*/
+h3{
+  color:green;
+}
+/* 5: Selector   hijo*/
+p>b{
+  color:grey;
+}
+/*6: Selector seguido*/
+div+p{
+  color:purple;
+}
+/*7: Selector atributo en enlaces comenzados en http://*/
+a[href^="https"]{
+  background-color: yellow;
+}
+
+
+/*8:Selector */
+.e{
+  table-layout: fixed;
+
+}
+/*9: */
+
+/*10:*/
+
+/*11: */
+
+/*12:*/
+
+/*13: */
+
+/*14:*/
+
+/*15: */
+
+/*16:*/
+
+/*17: */
+
+/*18:*/
