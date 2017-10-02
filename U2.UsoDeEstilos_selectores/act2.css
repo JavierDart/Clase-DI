@@ -18,7 +18,7 @@ img+p{
 footer>span{
   color:pink;
 }
-p>b{
+p>b.destacado{
   color:red;
 }
 #japo{
