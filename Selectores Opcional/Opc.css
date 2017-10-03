@@ -4,25 +4,31 @@
 *{
   background-color: lightblue;
 }
-/*2:Selector clase a*/
+/*2:Selector clase */
+
 .a{
 font-style: italic;
+font-size: 35px;
+font-family: monospace;
+font-weight:bold;
+color:#71d90b;
 }
 /*3: Selector id b*/
 #b{
   font-size: 200%;
 }
 /*4: selector simple*/
-h3{
+span{
   color:green;
 }
 /* 5: Selector   hijo*/
 p>b{
-  color:grey;
+  color:blue;
 }
 /*6: Selector seguido*/
-div+p{
+article+p{
   color:purple;
+  font-style: oblique;
 }
 /*7: Selector atributo en enlaces comenzados en http://*/
 a[href^="https"]{
@@ -30,27 +36,57 @@ a[href^="https"]{
 }
 
 
-/*8:Selector */
-.e{
-  table-layout: fixed;
-
+/*8: Selector de enlace visitado*/
+a:visited{
+  color: black;
+  font-family: fantasy;
 }
-/*9: */
 
-/*10:*/
+/*9: Selector para enlaces , cambia de color al pasar por encima*/
+a:hover{
+  color:red;
+}
 
-/*11: */
+/*10:Selector de la primera letra, junto con selector de clase*/
+p.imp::first-letter{
+  font-size: 50px;
+  font-family: sans-serif;
+}
+/*11: Selector de solo un elemento hijo junto selector de hijos*/
+p>span:only-child{
+  color: purple;
+}
+/*12:Selector de p pares*/
+article p:nth-child(odd){
+  background-color: grey;
+}
 
-/*12:*/
-
-/*13: */
-
-/*14:*/
-
-/*15: */
-
-/*16:*/
-
-/*17: */
-
+/*13:Selector de varias elementos */
+table, th, td {
+   border: 1px solid black;
+}
+/*14:Selectores de hijos por posicion y pasar por encima*/
+p i:nth-child(2):hover {
+  background-color: red;
+  cursor: pointer;
+}
+p i:nth-child(1):hover {
+  background-color: yellow;
+  cursor:wait;
+}
+/*15:Selector primera linea */
+td::first-line{
+  color:DarkRed ;
+}
+/*16: Selector de elementos precedidos de otros*/
+p ~ul{
+  background-color: DarkViolet ;
+}
+/*17: Selector para insertar algo despues*/
+a::after{
+  content:"............**R*I*C*K**'N**M*O*R*T*Y**";
+}
 /*18:*/
+a:active{
+  color:purple;
+}
