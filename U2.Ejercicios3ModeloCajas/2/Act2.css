@@ -1,0 +1,31 @@
+*{
+  font-family: Verdana;
+  color:blue;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+div>h1{
+
+  text-align:center;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius:5px ;
+}
+
+p{
+  text-indent:1cm;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1{
+  width:80px;
+
+}

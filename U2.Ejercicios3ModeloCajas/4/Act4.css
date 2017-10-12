@@ -1,0 +1,106 @@
+*{
+  font-family: Verdana;
+  color:yellow;
+  font-size: 0.9em;
+  line-height: 1.4em;
+
+}
+div>h1{
+
+  text-align:center;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius:5px ;
+}
+
+p{
+  text-indent:1cm;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1{
+  width:80px;
+  color:white;
+}
+/*.................Ejercicio 3..............*/
+body{
+background: #FFF url("http://www.webdesignhot.com/wp-content/uploads/2014/07/Blue-Abstract-Design-Art-Background-Vector-Illustration.jpg") ;
+}
+a { margin: 1em 0;
+  display: block;
+
+}
+.pdf { color: #E37529;
+  padding: 0 0 0 40px;
+
+  background-image: url("http://www.zamzar.com/images/filetypes/pdf.png");
+  background-repeat: no-repeat;
+  background-size: 30px ;
+  height: 30px;
+
+
+}
+div>h1{
+  background: url("https://1.bp.blogspot.com/_sD9yQTE5QZQ/SGvRFJbT6QI/AAAAAAAADg4/5Ot2-aTA4_w/s400/blue1961.jpg");
+  border:1px solid white;
+  color:white;
+  margin: auto;
+}
+
+/********************Ejercicio 4************/
+table,th,td{
+  border:  1px solid black;
+  border-collapse: collapse;
+  color:black;
+  text-align: center;
+
+
+}
+.css{
+  color: black;
+    padding: 0 0 0 40px;
+
+    background-image: url("http://w3widgets.com/responsive-slider/img/css3.png");
+    background-repeat: no-repeat;
+    background-size: 50px ;
+    height: 50px;
+    margin: 1em 0;
+      display: block;
+}
+.html{
+  color: black;
+    padding: 0 0 0 40px;
+
+    background-image: url("https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png");
+    background-repeat: no-repeat;
+    background-size: 50px ;
+    height: 50px;
+    margin: 1em 0;
+      display: block;
+}
+tr.d{
+  background-color: grey;
+}
+tr{
+  background-color: white;
+}
+td>a:hover{
+  background-color: yellow;
+  text-decoration: none;
+}
+.w{
+  width: 150px;
+  padding-right:50px;
+  margin-top: 150px;
+}
+caption{
+  align-items: center;
+}
