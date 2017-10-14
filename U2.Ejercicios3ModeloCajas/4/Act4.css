@@ -92,15 +92,21 @@ tr.d{
 tr{
   background-color: white;
 }
-td>a:hover{
-  background-color: yellow;
-  text-decoration: none;
-}
+
+
 .w{
   width: 150px;
   padding-right:50px;
   margin-top: 150px;
 }
-caption{
-  align-items: center;
+
+.w:hover{
+  background-color: yellow;
+  text-decoration: none;
+}
+
+tfoot{
+  font-style: italic;
+  font-size: 0.9em;
+  margin:auto;
 }
