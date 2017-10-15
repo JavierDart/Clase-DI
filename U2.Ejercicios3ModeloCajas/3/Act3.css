@@ -36,6 +36,7 @@ background: #FFF url("http://www.webdesignhot.com/wp-content/uploads/2014/07/Blu
 a { margin: 1em 0;
   float: left;
   clear: left;
+  display: block;
 }
 .pdf { color: #E37529;
   padding: 0 0 0 40px;
@@ -52,4 +53,12 @@ div>h1{
   border:1px solid white;
   color:white;
   margin: auto;
+}
+button{
+  margin: 1em 10;
+}
+button:hover{
+
+display:block;
+color:red;
 }

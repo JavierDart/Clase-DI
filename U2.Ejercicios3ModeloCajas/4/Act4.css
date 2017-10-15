@@ -105,8 +105,8 @@ tr{
   text-decoration: none;
 }
 
-tfoot{
-  font-style: italic;
-  font-size: 0.9em;
-  margin:auto;
+caption{
+  font-size: 10px;
+   font-style: italic;
+   caption-side: bottom;
 }
