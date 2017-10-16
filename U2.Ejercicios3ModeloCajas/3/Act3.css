@@ -54,8 +54,9 @@ div>h1{
   color:white;
   margin: auto;
 }
-button{
+button>a{
   margin: 1em 10;
+  color:blue;
 }
 button:hover{
 
