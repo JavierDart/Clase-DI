@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 2</title>
+    <link rel="stylesheet" href="Act2.css">
+  </head>
+  <body>
+  <fieldset>
+    <legend>Inscripción</legend>
+    <fieldset>
+      <legend>Información personal</legend>
+
+    <form class="a" action="index.html" method="post">
+      <div>
+        <label for="nombre">Nombre*:</label>
+        <input type="text" id="nombre" placeholder="Introduce tu nombre..." required="required" autofocus="autofocus">
+      </div>
+      <br>
+      <div>
+        <label for="apell">Apellidos*:</label>
+        <input type="text" id="apell" required="required" placeholder="Introduce tus apellidos...">
+      </div>
+      <br>
+      <div>
+        <label for="mail">Email*:</label>
+        <input type="email" id="mail" required="required" placeholder="Introduce tu e-mail...">
+      </div>
+      <div>
+        <label for="envio">Sexo:</label>
+        <input type="radio" name="envio" value="" >Hombre
+        <input type="radio" name="envio" value="" >Mujer
+      </div>
+      <div>
+        <label for="date">Fecha de nacimiento*:</label>
+        <input type="date" required="required">
+        <br>
+        <br>
+      </div>
+      <div>
+        <label for="provincia">Provincia:</label>
+        <select class="provincia">
+          <option value="vlc" selected>Seleccione provincia</option>
+          <option value="vlc" >Valencia</option>
+          <option value="vlc" >Castellón</option>
+          <option value="vlc" >Alicante</option>
+        </select>
+      </div>
+      <div>
+        <label for="pob">Población:</label>
+        <input type="text" id="pob" placeholder="Introduce tu población...">
+      </div>
+      <div>
+        <label for="tel">Telefono:</label>
+        <input type="text" id="tel" placeholder="Introduce tu telefono...">
+      </div>
+      <div>
+        <label for="desc">Motivo inscripción:</label>
+        <textarea id="desc" rows="num_filas" cols="num_columnas" maxlength="100" placeholder="Introduce tu motivo de inscripción.."></textarea>
+      </div>
+      <div>
+        <label for="avatar">Escoge el color de tu avatar:</label>
+        <input type="color" id="avatar">
+      </div>
+    </form>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Creación de usuario</legend>
+    <form class="b" action="index.html" method="post">
+      <div>
+        <label for="nombreUs">Nombre de usuario*:</label>
+        <input type="text" id="nombreUs" required="required" placeholder="Introduce tu nombre de usuario...">
+      </div>
+      <br>
+      <div>
+        <label for="cont">Contraseña*:</label>
+        <input type="password" id="cont" required="required" maxlength="8" placeholder="Introduce tu contraseña...">
+      </div>
+      <div>
+        <label for="cont2">Repite contraseña*:</label>
+        <input type="password" id="cont2" required="required" maxlength="8" placeholder="Introduce tu contraseña otravez...">
+      </div>
+    </form>
+  </fieldset>
+  <div>
+    <input type="checkbox" name="q" >
+    Deseo recibir copias de los mensajes del foro en mi correo electronico
+  </div>
+  <div>
+    <input type="checkbox" name="l" >
+    Deseo recibir notificaciones de proximos eventos en mi correo electronico
+  </div>
+  <div>
+    <input type="submit" value="Confirmar registro">
+  </div>
+  <div>
+    <p class="note">Notas: Los campos marcados con "*" son obligatorios </p>
+  </div>
+</fieldset>
+  </body>
+</html>

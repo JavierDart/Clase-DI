@@ -1,0 +1,36 @@
+div{
+  margin-top: 10px;
+
+}
+div label{
+  width: 15%;
+  float: left;
+}
+input [text]{
+  padding-left: 0.5em;
+}
+input:focus{
+  outline: none;
+  border: 1px solid violet;
+  background-color: lightgrey;
+}
+.note{
+  border:1px solid lightgrey;
+  font-style: italic;
+  margin-left:  10px;
+
+}
+input{
+  border-radius: 2px;
+}
+textarea{
+  height: 40px;
+  width: 100%;
+  scroll-behavior: auto;
+  overflow: scroll;
+}
+textarea:focus{
+  outline: none;
+  border: 1px solid violet;
+  background-color: lightgrey;
+}
