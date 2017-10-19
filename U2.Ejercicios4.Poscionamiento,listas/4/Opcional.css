@@ -50,9 +50,9 @@ a>img{
   background-image: url("flecha.png");
   background-repeat: no-repeat;
   height: 30px;
-  /*display:none;*/
+  display:none;
 }
-li>a:hover{
+li>a:hover img{
 
   display: block;
 }
