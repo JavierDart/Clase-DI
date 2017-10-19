@@ -43,16 +43,16 @@ li a{
   display: block;
 }
 /*----------opcional----------*/
-a>img{
+img{
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin: 10px 15px 10px 15px;
   background-image: url("flecha.png");
   background-repeat: no-repeat;
   height: 30px;
   display:none;
 }
-li>a:hover img{
+li:hover img{
 
   display: block;
 }
