@@ -1,0 +1,14 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+footer{
+  align-items: center;
+  background-color: white;
+  height: 50px;
+}

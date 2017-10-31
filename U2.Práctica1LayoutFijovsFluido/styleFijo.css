@@ -1,0 +1,141 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  padding-top:140px;
+}
+/*cabeza de la pagina*/
+header{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: table;
+  background-color: lightblue;
+}
+/*cuerpo de la pagina*/
+section{
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  display: table;
+  width: 960px;
+}
+/*pie de pagina*/
+footer .derechos{
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  position: sticky;
+
+}
+/*---Header---*/
+
+header img{
+  width: 80px;
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+}
+header h1{
+  display: table-cell;
+  vertical-align: middle;
+    font: bold 36px Helvetica, sans-serif;
+}
+header nav{
+  display: table-cell;
+      vertical-align: middle;
+}
+header nav li{
+  display: inline-block;
+  background-color: steelblue;
+  border: 1px solid steelblue;
+  padding: 5px 5px 5px 5px;
+
+}
+header a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*--menu lateral--*/
+
+.menuLateral{
+  display: table-cell;
+  margin-right: 0px;
+  margin-left: 50px;;
+  padding: 15px;
+}
+.menuLateral ul{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+.menuLateral ul .sub{
+    list-style:circle;
+}
+.menuLateral ul.sub li{
+  width: 170px;
+  list-style-position: inside;
+  color:black;
+}
+.menuLateral li ul{
+  display: none;
+}
+.menuLateral li{
+  width: 180px;
+  padding: 10px;
+  background-color: grey;
+  }
+.menuLateral li:hover ul{
+  display: block;
+  background-color: lightgrey;
+}
+.menuLateral li:hover{
+    background-color: lightgrey;
+  }
+.menuLateral li a{
+  text-decoration: none;
+    color:black;
+  display: block;
+}
+/*------Entrada uno----*/
+section h2{
+  font-size: 24px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+section h1{
+  font-size: 14px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+.EntradaUno img{
+  width: 80px;
+}
+.EntradaUno hgroup{
+  width: 780px;
+  display: table-cell;
+  border: 1px solid lightgrey;
+  background-color: linen;
+  padding: 5px 5px 5px 15px;
+}
+
+hgroup footer{
+  margin-left: 680px;
+  color:blue;
+}
+article{
+  margin-bottom: 15px;
+}
+/*----Entrada dos----*/
+.entradaDos hgroup{
+  width: 780px;
+  display: table-cell;
+  border: 1px solid lightgrey;
+  background-color: linen;
+  padding: 5px 5px 5px 15px;
+}

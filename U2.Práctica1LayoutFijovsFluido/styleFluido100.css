@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+/*cabeza de la pagina*/
+header{
+  width: 100%;
+  height: 2%;
+  padding: 1%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: table;
+  background-color: lightblue;
+}
+/*cuerpo de la pagina*/
+section{
+  margin-left: auto;
+  margin-top: 155px;
+  margin-right: auto;
+  display: table;
+}
+  section h2{
+    font: bold 1.5em Verdana, sans-serif;
+  }
+  section h1{
+    font: bold 1em Verdana, sans-serif;
+  }
+/*pie de pagina*/
+footer .derechos{
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  position: sticky;
+}
+/*---Header---*/
+header img{
+  width: 80px;
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+}
+header h1{
+  display: table-cell;
+  vertical-align: middle;
+    font: bold 2em Helvetica, sans-serif;
+}
+header nav{
+  display: table-cell;
+}
+header nav li{
+  display: inline-block;
+  background-color: steelblue;
+  border: 1px solid steelblue;
+  padding: 5px 5px 5px 5px;
+}
+header a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*--menu lateral--*/
+.menuLateral{
+  display: table-cell;
+  margin-right: 0%;
+  margin-left: 50%;
+  padding: 8%;
+}
+.menuLateral ul{
+  list-style:none;
+  padding: 0%;
+  margin: 0%;
+}
+.menuLateral ul .sub{
+    list-style:circle;
+}
+.menuLateral ul.sub li{
+  width: 17%;
+  list-style-position: inside;
+  color:black;
+}
+.menuLateral li ul{
+  display: none;
+}
+.menuLateral li{
+  width: 18%;
+  padding: 50px;
+  background-color: grey;
+  }
+.menuLateral li:hover ul{
+  display: block;
+  background-color: lightgrey;
+}
+.menuLateral li:hover{
+    background-color: lightgrey;
+  }
+.menuLateral li a{
+  text-decoration: none;
+    color:black;
+  display: block;
+}
+/*------Entrada uno----*/
+.EntradaUno img{
+  width: 30%;
+}
+.EntradaUno hgroup{
+  width: 78%;
+  display: table-cell;
+  border: 1px solid lightgrey;
+  background-color: linen;
+    padding: 5% 5% 5% 5%;
+}
+hgroup footer{
+  margin-left: 68%;
+  color:blue;
+}
+/*----Entrada dos----*/
+.entradaDos hgroup{
+  width: 78%;
+  display: table-cell;
+  border: 1px solid lightgrey;
+  background-color: linen;
+  padding: 5% 5% 5% 5%;
+}
