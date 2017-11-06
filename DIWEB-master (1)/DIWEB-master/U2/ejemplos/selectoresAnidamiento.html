@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Descendant Selector</title>
+<style>
+
+/* Todos los h2 que están dentro de un elemento section. */
+xxx {
+  font-family: Arial, Helvetica, sans-serif;
+  color: navy;
+}
+
+/* Todos los elementos li que están dentro de un elemento section. */
+xxx {
+  color: orange;
+}
+
+/* Todo elemento article que es hijo directo de un elemento section. */
+xxx {
+  color: green;
+  font-size: 24px;
+}
+
+/* Todo h2 que es hijo directo de un elemento section. */
+xxx {
+  color: red;
+}
+
+/* Todos los section que tengan al mismo nivel que ellos y junto a ellos un h2 (hermanos y además uno junto al otro). */
+xxx {
+    font-style: italic;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+<h1>Selectores anidados</h1>
+
+<section>
+  <h2>Subtítulo 1 (h2)</h2>
+  <div>
+    <h2>Subtítulo 2 (h2)</h2>
+    <article>ARTICLE dentro de un DIV, dentro de un SECTION</article>
+  </div>
+</section>
+<section>
+  <h2>Subtítulo 3 (h2)</h2>
+  <article>ARTICLE hijo directo de SECTION.</article>
+</section>
+
+<h2>Subtítulo 4 (h2)</h2>
+<section>
+  Tabla de contenidos:
+  <ul>
+    <li>Article 1</li>
+    <li>Article 2</li>
+    <li>Article 3</li>
+  </ul>
+</section>
+<section> Esto es otro section </section>
+<article>
+  Lista de la compra:
+  <ul>
+    <li>Cookies</li>
+    <li>Tarta</li>
+    <li>Pastel</li>
+  </ul>
+</article>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+color: gray;
+}
+
+p {
+font-size: 15px;
+}
+
+strong {
+font-style: italic;
+font-size: 20px;
+}
+
+div {
+border-style: solid;
+border-width: 1px;
+border-color: red;
+background-color: rgba(255, 0, 0, 0.2);
+margin: 5px;
+width: 300px;
+padding: 5px;
+}
+</style>
+</head>
+<body>
+<p>Un párrafo con un <strong>texto enfatizado</strong></p>
+
+<div style="border-top-style: dashed;">
+<p> Aquí tenemos un párrafo</p>
+<div style="background-color:rgba(0,0,255,0.2);width:50%;">
+<p>No hereda la línia discontinua</p>
+</div>
+</div>
+<br />
+<div style="border-top-style: dashed;">
+<p>Aquí tenemos un párrafo</p>
+<!--Cuando usamos inherit en una propiedad,
+indicamos que hereda el estilo del elemento
+que lo contiene-->
+<div style="border-top-style: inherit;background-color:rgba(0,0,255,0.2);width:50%;">
+<p>Se hereda la linea discontinua</p>
+</div>
+</div>
+<a href="https://www.w3.org/TR/css-2010/#properties">Propiedades CSS heredables</a>
+<br>
+<br>
+<p>Prefijos de navegadores:</p>
+<ul>
+  <li>Android: -webkit-</li>
+  <li>Chrome: -webkit-</li>
+  <li>Firefox: -moz-</li>
+  <li>Internet Explorer: -ms-</li>
+  <li>iOS: -webkit-</li>
+  <li>Opera: -o-</li>
+</ul>
+</body>
+</html>
