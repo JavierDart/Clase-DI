@@ -1,0 +1,85 @@
+*	{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  color:white;
+ }
+body{
+  background-color: black;
+}
+section, footer {
+	display: block;
+}
+
+#cabecera{
+	display: table;
+	width: 100%;
+	position:fixed;
+	z-index: 100;
+    background-color: black;
+}
+#pie{
+  display: table;
+	width: 100%;
+	background-color: black;
+	margin-top: 50px;
+}
+.oferta{
+  margin-top: 180px;
+	}
+
+.logo{
+  display: table-cell;
+  vertical-align: middle;
+  width: 120px;
+  padding: 20px;
+}
+
+header > h1{
+	display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  text-transform: capitalize;
+  font-family: 'Permanent Marker';
+}
+
+body {
+	text-align: center;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+hgroup h4, hgroup p{
+		font-family: 'Indie Flower', cursive;
+}
+
+#contact{
+width: 80px;
+height: 80px;
+}
+
+.conocenos{
+  display: table-cell;
+}
+.conocenos img{
+	width: 120px;
+}
+.conocenos h3, .contacto h3{
+	text-decoration: underline;
+	color: lightblue;
+		font-family: 'Lobster', cursive;
+}
+.conocenos p, .contacto p{
+	font-family: 'Indie Flower', cursive;
+}
+.contacto{
+  display: table-cell;
+}
+#contact1{
+	float: left;
+	width: 80px;
+}
+#contact2{
+	float: left;
+	width: 80px;
+}
