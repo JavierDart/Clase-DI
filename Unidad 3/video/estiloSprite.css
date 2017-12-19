@@ -1,0 +1,157 @@
+article h1 i{
+  background: url('./iconos/spriteIconos.png');
+  display: inline-block;
+}
+
+.icon-novedades {
+  background-position:0 -30px;
+  height: 30px;
+  width: 39px;
+}
+
+.icon-estudios{
+background-position:0 -60px;
+height: 30px;
+width: 39px;
+}
+.icon-contactar{
+background-position:0 -0px;
+height: 30px;
+width: 39px;
+}
+
+.fa-facebook-square{
+color:#3b5998;
+}
+.fa-facebook-square:hover{
+color:	#8b9dc3;
+}
+.fa-twitter-square{
+color:#0084b4;
+}
+.fa-twitter-square:hover{
+color:#1dcaff;
+}
+.fa-linkedin-square{
+color:#0077B5;
+}
+.fa-linkedin-square:hover{
+color:black;
+}
+.fa-tumblr-square{
+color:#34526f;
+}
+.fa-tumblr-square:hover{
+color: #1ab7ea;
+}
+/*------------------------*/
+.mute{
+       background: url('iconos/spritesAudio.png') no-repeat -0px -0px;
+       width: 128px;
+       height: 128px;
+       float:left;
+     }
+     .menosVol{
+       width: 128px;
+       height: 128px;
+       background: url("iconos/spritesAudio.png") no-repeat -264px -0px;
+       float:left;
+     }
+     .masVol{
+       width: 128px;
+       height: 128px;
+       background: url("iconos/spritesAudio.png") no-repeat -133px -0px;
+       float:left;
+     }
+     .play{
+       background: url("iconos/spritesAudio.png") no-repeat -400px -0px;
+       width: 127px;
+       height: 127px;
+       float:left;
+     }
+     .stop{
+       background: url("iconos/spritesAudio.png") no-repeat -528px -0px;
+       width: 129px;
+       height: 129px;
+       float:left;
+     }
+
+     .chance{
+       background: url("iconos/spritesAudio.png") no-repeat -645px -0px;
+       width: 129px;
+       height: 129px;
+       float:left;
+     }
+     .mute:hover{
+       background: url('iconos/spritesAudioHolder.png') no-repeat -0px -0px;
+       width: 128px;
+       height: 128px;
+       float:left;
+       }
+    .menosVol:hover{
+      width: 128px;
+      height: 128px;
+      background: url("iconos/spritesAudioHolder.png") no-repeat -264px -0px;
+      float:left;
+      }
+    .masVol:hover{
+      width: 128px;
+      height: 128px;
+      background: url("iconos/spritesAudioHolder.png") no-repeat -133px -0px;
+      float:left;
+      }
+    .stop:hover{
+      background: url("iconos/spritesAudioHolder.png") no-repeat -530px -0px;
+      width: 129px;
+      height: 129px;
+      float:left;
+      }
+    .play:hover{
+      background: url("iconos/spritesAudioHolder.png") no-repeat -398px -0px;
+      width: 127px;
+      height: 127px;
+      float:left;
+     }
+     .chance:hover{
+       background: url("iconos/spritesAudioHolder.png") no-repeat -667px -0px;
+       width: 129px;
+       height: 129px;
+       float:left;
+     }
+     /* Dejamos una separación entre los enlaces */
+     .contenedor{
+       margin: 50px;
+       width: 50%;
+       height: 50%;
+     }
+     .contenedor span{
+       margin: -15px;
+       float:center;
+     }
+     .musica{
+       float:left;
+     }
+     .video{
+       float:left;
+     }
+     video{
+    width:50%;
+    height: auto;
+    float:left;
+    }
+
+
+.videoIframe{
+    height:0px;
+    width:50%;
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+}
+.videoIframe iframe{
+    position:absolute;
+    height:50%;
+    width:50%;
+    top:0px;
+    left:0px;
+}
+/*-----------------*/
