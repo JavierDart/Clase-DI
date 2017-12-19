@@ -76,12 +76,7 @@ color: #1ab7ea;
        float:left;
      }
 
-     .chance{
-       background: url("iconos/spritesAudio.png") no-repeat -645px -0px;
-       width: 129px;
-       height: 129px;
-       float:left;
-     }
+
      .mute:hover{
        background: url('iconos/spritesAudioHolder.png') no-repeat -0px -0px;
        width: 128px;
@@ -112,12 +107,7 @@ color: #1ab7ea;
       height: 127px;
       float:left;
      }
-     .chance:hover{
-       background: url("iconos/spritesAudioHolder.png") no-repeat -667px -0px;
-       width: 129px;
-       height: 129px;
-       float:left;
-     }
+
      /* Dejamos una separación entre los enlaces */
      .contenedor{
        margin: 50px;
@@ -153,5 +143,9 @@ color: #1ab7ea;
     width:50%;
     top:0px;
     left:0px;
+}
+.video iframe{
+  width: 80%;
+  height: 80%;
 }
 /*-----------------*/
