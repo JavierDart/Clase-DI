@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="rejilla12col.css">
+
+    <style media="screen">
+      /* Estilos comunes */
+      .footer1, .footer2{
+        background-color: yellow;
+        border:1px solid black;
+        height: 40px;
+        margin-top: 2px;
+      }
+      .cuerpo1, .cuerpo2, .cuerpo3{
+        border:1px solid black;
+        font-size: 4em;
+        margin-top: 2px;
+        background-color: red;
+      }
+      .header{
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:60px;
+      }
+      /* Tamaño lg y md */
+      @media (min-width: 768px) {
+        .header{
+          background-color:lime;
+          text-align: left;
+        }
+        .cuerpo1, .cuerpo2, .cuerpo3{
+          height: 400px;
+          text-align: center;
+        }
+        .footer1{
+          text-align: right;
+        }
+        .footer2{
+          text-align: left;
+        }
+      }
+
+      /* Tamaño sm */
+      body{
+        font-weight: bold;
+      }
+      @media (min-width:576px) and (max-width:767px){
+        .header{
+          background-color:cyan;
+          text-align: left;
+        }
+        .cuerpo1{
+          text-align: left;
+          height: 200px;
+        }
+        .cuerpo2{
+          text-align: right;
+          height: 200px;
+        }
+        .cuerpo3{
+          display: none;
+        }
+        .footer1, .footer2{
+          text-align: center;
+        }
+      }
+      /* Tamaño xs */
+      @media (max-width: 575px) {
+        .header{
+          background-color:orange;
+          text-align: center;
+        }
+        .cuerpo1{
+          text-align: left;
+          height: 150px;
+        }
+        .cuerpo2{
+          display: none;
+        }
+        .cuerpo3{
+          text-align: right;
+          height: 150px;
+        }
+        .footer1, .footer2{
+          text-align: center;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 header">Header</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 cuerpo1">1</div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 cuerpo2">2</div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 cuerpo3">3</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 footer1">Footer 1</div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 footer2">Footer 2</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>U2 Práctica 4: Layout BS </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style media="screen">
+      .header{
+        text-align: center;
+        background: lime;
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:60px;
+      }
+      .cajaAzul{
+        text-align: center;
+        background: steelblue;
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:75px;
+      }
+      .cajaGris{
+        text-align: center;
+        background: silver;
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:75px;
+      }
+      .cajaCian{
+        text-align: center;
+        background: cyan;
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:60px;
+      }
+      .cajaNaranja{
+        text-align: center;
+        background: orange;
+        border:1px solid black;
+        margin-bottom: 2px;
+        height:75px;
+      }
+      .footer{
+        text-align: center;
+        background: lime;
+        border:1px solid black;
+        height:40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row"> <!--Fila 1: header-->
+        <div class="w-100 header">Header</div>
+      </div>
+      <div class="row"> <!--Fila 2: azul-->
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 offset-lg-3 offset-md-3 cajaAzul">1</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 cajaAzul">2</div>
+        <div class="w-100 d-none d-md-block d-lg-block col-lg-3 col-md-3"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 cajaAzul">3</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 offset-lg-6 offset-md-6 cajaAzul">4</div>
+      </div>
+      <div class="row"> <!--Fila cyan-->
+        <div class="col-sm-12 d-none d-sm-block d-md-none cajaCian">Tablet</div>
+      </div>
+      <div class="row"> <!--Fila 3: gris-->
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 order-lg-4 order-md-4 cajaGris">a</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 order-lg-3 order-md-3 cajaGris">b</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 order-lg-2 order-md-2 cajaGris">c</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 order-lg-1 order-md-1 cajaGris">d</div>
+      </div>
+      <div class="row"> <!--Fila 4: cyan-->
+        <div class="col-xl-12 col-lg-12 col-md-12 d-none d-lg-block d-md-block cajaCian">Desktop</div>
+        <div class="col-xl-12 col-12 d-block d-sm-none cajaCian">Mobile</div>
+      </div>
+      <div class="row"> <!--Fila 5: naranja-->
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 order-xl-2 order-lg-2 order-md-2 cajaNaranja">:D</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 offset-lg-3 offset-md-3 order-xl-1 order-lg-1 order-md-1 d-none d-sm-block cajaNaranja">:(</div>
+      </div>
+      <div class="row"> <!--Fila 6: footer-->
+        <div class="w-100 d-none d-sm-block footer">Footer</div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo picture</title>
+    <style media="screen">
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+     <picture>
+       <!--Si cambiamos el orden de los source, no funcionará igual porque se queda con el 1º que lo cumple por orden-->
+       <source media="(min-width: 992px)" srcset="imagen-lg.png"> <!--Se queda con este desde infinito a 992px -->
+       <source media="(min-width: 768px)" srcset="imagen-md.png"> <!-- Se queda con este desde 991px a 768px-->
+       <source media="(min-width: 576px)" srcset="imagen-sm.png"> <!--Se queda con esta desde 769px a 576px  -->
+       <img src="imagen-xs.png" alt="imagen"> <!--Si el navegador no es compatible, o si es menor que 576px, se queda con este tamaño -->
+     </picture>
+  </body>
+</html>

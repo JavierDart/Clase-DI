@@ -1,0 +1,10 @@
+article h1 i{
+  background: url('./iconos/spriteIconos.png');
+  display: inline-block;
+}
+
+.icon-novedades {
+  background-position:0 -30px;
+  height: 30px;
+  width: 39px;
+}

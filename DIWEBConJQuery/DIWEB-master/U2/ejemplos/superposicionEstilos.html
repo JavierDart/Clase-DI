@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo estilos</title>
+    <style media="screen">
+      p{background: crimson;} /* Especificidad de 1 puntos */
+      .parrafo{background: pink;} /*Especificidad de 10 puntos*/
+      p.parrafo{background: green;} /*Especificidad de 11 puntos*/
+      #id-parrafo{background: blue;}/*Especificidad de 100 puntos*/
+      p#id-parrafo{background: cyan;}/*Especificidad de 101 puntos*/
+      p.parrafo#id-parrafo{background:yellow;}/*Especificidad de 111 puntos*/
+    </style>
+  </head>
+  <body>
+    <p class="parrafo">
+      Esto es un párrafo
+    </p>
+    <p id="id-parrafo">
+      Esto es un párrafo
+    </p>
+    <p>
+      Esto es otro párrafo
+    </p>
+  </body>
+</html>

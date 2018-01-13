@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U2. Ejemplo Modelo de Cajas</title>
+    <style media="screen">
+      /*Los márgenes de h1 y h2 colapsan.
+      Esto no ocurre siempre: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Modelo_Caja/Mastering_margin_collapsing*/
+      h1{
+        margin:20px 0 30px;
+      }
+      h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      /*Las cajas miden distinto dependiendo de como tome la medida*/
+      .div1 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+      }
+      .div2 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid red;
+      }
+      .div3 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+        box-sizing: border-box;
+      }
+      .div4 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid red;
+        box-sizing:border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>¿Tengo 4 cajas iguales?</h1>
+    <h2>Cajas sin box-sizing</h2>
+<div class="div1">
+  <p>Caja más pequeña</p>
+  <p>(Anchura: 300px y altura:100px).</p>
+</div>
+<br>
+<div class="div2">
+  <p> ¿Esta caja es más grande? En realidad no. Sólo tiene 50px más de relleno</p>
+  <p>(Anchura: 300px y altura:100px).</p>
+</div>
+
+<h2>Cajas con box-sizing</h2>
+<div class="div3">
+  <p>Las dos cajas tienen la misma medida</p>
+  <p>(Anchura: 300px y altura 100px).</p>
+</div>
+<br>
+<div class="div4">Otra caja más con relleno de 50px y box-sizing</div>
+  </body>
+</html>

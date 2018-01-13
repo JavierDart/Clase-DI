@@ -1,0 +1,24 @@
+*{
+  color:black;
+}
+
+#cabecera{
+  background: white;
+}
+
+header > h1{
+  background: white;
+}
+
+#menu li a{
+  background-color: black;
+  color: white;
+}
+
+article{
+  background-color: lightgray;
+}
+
+article img{
+  display:none;
+}

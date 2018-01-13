@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo Fuente Montserrat Local</title>
+    <style media="screen">
+      @font-face {
+        font-family: "Montserrat";
+        src: url("Montserrat-Regular.ttf");
+      }
+      body{
+        font-family: "Montserrat", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fuente local: Montserrat</h1>
+    <p>La <a href="https://fonts.google.com/specimen/Montserrat">fuente Montserrat</a> está descargada de Google-Fonts</p>
+    <p>Si instalamos la fuente dentro de las fuentes del equipo en src podemos usar local("Montserrat") en cambio si nos referimos al fichero, tanto si es remoto como si es local, usaremos url()</p>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/@font-face">Más información sobre @font-face</a>
+  </body>
+</html>

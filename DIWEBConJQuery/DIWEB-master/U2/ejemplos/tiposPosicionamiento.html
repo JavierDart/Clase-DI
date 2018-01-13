@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U2.Ej Tipos Posicionamiento</title>
+    <style media="screen">
+      body {
+          font-family: arial;
+          font-size: 1.1em;
+      }
+      div {
+          position: relative;
+          width: 400px;
+          height: 220px;
+          border: 1px solid black;
+          margin: 5px;
+          box-sizing: border-box;
+          padding: 5px;
+          background-color: rgba(255, 0, 0, 0.2);
+      }
+
+      div > div:nth-child(3){
+        background-color: rgba(0, 255, 0, 0.3);
+      }
+
+
+/*Por defecto, el posicionamiento es static
+En este caso sólo tengo en cuenta:
+- las medidas de la caja
+- si son bloques o inline
+*/
+      .cajaInline {
+        height: 40px;
+        display: inline;
+      }
+      .cajaBlock {
+        width: 280px;
+        height: 40px;
+        margin-top: 16px;
+      }
+
+/*
+El posicionamiento relativo, es relativo respecto a donde iría normalmente.
+A partir de donde iría, puedo indicar distancias con:
+- top
+- left
+- bottom
+- right
+*/
+      .cajaRel {
+        position: relative;
+        top: 50px;
+        left: 0px;
+        width: 200px;
+        height: 80px;
+        display: inline;
+      }
+
+
+/* El posicionamiento Absoluto, es relativo al elemento contenedor.
+El contenedor es el elemento más cercano con posicionamiento no static.
+Salen del flujo normal a otro plano.
+*/
+      .cajaAbs {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 40px;
+        display: inline;
+        z-index: 2;
+      }
+
+/*Esta se queda clavada donde le decimos sin moverse*/
+      .cajaFija{
+        position: fixed;
+        top: 100px;
+        left: 50px;
+        width: 100px;
+        height: 40px;
+        display: inline;
+      }
+      .cajaPega{
+        position: sticky;
+        top: 20px;
+        left: 350px;
+        width: 100px;
+        height: 40px;
+        display: inline;
+      }
+
+/*El posicionamiento flotante sitúa al elemento lo más
+a la dcha o izqda posible (si es right o left respectivamente)
+Los flotantes salen del flujo y se posicionan con flotantes
+*/
+      .cajaFlotanteDerecha{
+        float: right;
+        width: 120px;
+        height: 40px;
+      }
+      .cajaFlotanteIzquierda{
+        float: left;
+        width: 110px;
+        height: 40px;
+      }
+      .clear{
+        clear:left;
+      }
+      .cajaInlineB{
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <p>Las cajas están en posición estática.</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaInline">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div> -->
+    <!-- <div>
+      <p>Las cajas están en posición estática, excepto la caja2, que está en posición relativa.</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaRel">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div>
+    <div>
+      <p>Las cajas están en posición estática, excepto la caja2 que está en posición absoluta (la caja contenedora es relative).</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaAbs">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div> -->
+    <div>
+      <p>Las cajas están en posición estática, excepto la caja2 que está en posición fija.</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaFija">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div>
+    <div>
+      <p>Las cajas están en posición estática.</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaInline">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div>
+    <div>
+      <p>Las cajas están en posición estática, excepto la caja2 que está en posición fija.</p>
+      <div class="cajaInline">caja1</div>
+      <div class="cajaPega">caja2</div>
+      <div class="cajaInline">caja3</div>
+      <div class="cajaBlock">caja4</div>
+    </div>
+    <!-- <div>
+      <p>Las cajas están en posición estática.</p>
+      <div class="cajaBlock">caja1</div>
+      <div class="cajaBlock">caja2</div>
+      <div class="cajaBlock">caja3</div>
+    </div> -->
+    <!-- <div>
+      <p>Las cajas están en posición estática, excepto la caja2 que tiene un posicionamento flotante a la derecha.</p>
+      <div class="cajaBlock">caja1</div>
+      <div class="cajaFlotanteDerecha">caja2</div>
+      <div class="cajaBlock">caja3</div>
+    </div>
+    <div>
+      <p>Las cajas están en posición estática, excepto la caja2 que tiene un posicionamento flotante a la izquierda.</p>
+      <div class="cajaBlock">caja1</div>
+      <div class="cajaFlotanteIzquierda">caja2</div>
+      <div class="cajaBlock">caja3</div>
+    </div>-->
+    <div>
+      <p>Todas las cajas tienen un posicionamento flotante a la izquierda.</p>
+      <div class="cajaFlotanteIzquierda">caja1</div>
+      <div class="cajaFlotanteIzquierda">caja2</div>
+      <div class="cajaFlotanteIzquierda">caja3</div>
+    </div>
+    <div>
+      <p>Todas las cajas tienen un posicionamento flotante a la izquierda pero la caja2 tiene clear:left;.</p>
+      <div class="cajaFlotanteIzquierda">caja1</div>
+      <div class="cajaFlotanteIzquierda clear">caja2</div>
+      <div class="cajaFlotanteIzquierda">caja3</div>
+    </div>
+  </body>
+</html>

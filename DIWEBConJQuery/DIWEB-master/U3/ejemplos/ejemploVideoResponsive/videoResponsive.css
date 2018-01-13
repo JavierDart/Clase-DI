@@ -1,0 +1,70 @@
+/*Reseteo cajas*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/*Centramos body*/
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/*Tamaño de fuentes relativo*/
+h2 {
+  font-size: 2em;
+}
+figcaption {
+  font: 1.8em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/*Dimensionamos el contenedor*/
+.container {
+  width: 50%;
+  margin: 30px auto;
+}
+
+/***HTML5***/
+/*Hacemos el video HTML5 responsive*/
+video{
+    /*Ocupa el 100% del contenedor (eso es el 50% de la página)*/
+    width:100%;
+    height: auto;
+    /*La instrucción siguiente pone un límite superior de 560px*/
+    max-width:560px;
+}
+
+/** Iframe para poner videos de Plataformas **/
+/* El div videoIframe es el contenedor que con el padding-top crea el tamaño del vídeo */
+.videoIframe{
+    height:0px;
+    width:100%;
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+}
+/* El iframe se adapta al tamaño del contenedor que tendrá el ratio adecuado */
+.videoIframe iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+/***IFRAMES***/
+/*Hacemos los videos con iframe responsive*/
+/*OJO: A continuación, ejemplo de lo que
+NO FUNCIONA:*/
+/*iframe{
+  width:100%;
+/*}*/
+
+/* Podemos eliminar este estilo si queremos que no tenga un ancho máximo */
+.contenedorIframe{
+    width: 100%;
+    max-width:560px;
+    margin:auto;
+}
