@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script> /*Aquí va el código*/
+$(document).ready(function(){
+  $(document.getElementsByTagName('img')[0]).css("width","400px");
+  $(document.getElementsByTagName('div')[0]).css("text-align","center");
+
+  $(document.getElementsByTagName('img')[0]).slideToggle();
+  var contador = 0;
+  $(document.getElementsByTagName('h1')[0]).click(function(){
+    $(document.getElementsByTagName('img')[0]).slideToggle();
+    contador++;
+    if (contador%2==0) {
+      $(document.getElementsByTagName('h1')[0]).html("Haz click aquí para desplegar la imagen!");
+      console.log(contador);
+    }
+    if (contador%2!=0) {
+      $(document.getElementsByTagName('h1')[0]).html("Haz click aquí para plegar la imagen!");
+      console.log(contador);
+    }
+
+  });
+  $("#masAncho").click(function(){
+   var imagen= document.getElementsByTagName('img')[0].width;
+    $('img').css("width",imagen+20);
+   console.log("+");
+
+  });
+
+  $("#menosAncho").click(function(){
+   var imagen= document.getElementsByTagName('img')[0].width;
+    $('img').css("width",imagen-20);
+   console.log("-");
+
+  });
+});
+</script>
+</head>
+<body>
+ <h1>Haz click aquí para desplegar la imagen!</h1>
+ <div class="contenedor">
+ <img src="mundo.png">
+ <button id="masAncho">+</button>
+ <button id="menosAncho">-</button>
+ </div>
+</body>
+</html>
